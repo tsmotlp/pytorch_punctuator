@@ -22,3 +22,8 @@
 > * **`help_functions.py`**: the python file can be used to store and modify the model initilization strategies and optimizer scheduler settings.
 > * **`metrics.py`**: the python file can be used to store and modify the evaluation metrics, such as `Precsion`, `Recall`, `F1-score` etc.
 > * **`visualizer.py`**: the python file can be used for visualization of the losses and images.
+
+> **main.py**: the script for run the code.
+> * if you want to train the model from scratch, run `python main.py --mode train --start_epoch 1` in the command line of your python environment.
+> * if you want to resume the training process, run `python main.py --mode train --start_epoch epoch_you_want_to_resume` in the command line of your python environment.
+> * if you want to test the model, run `python main.py --mode test --load_epoch parameters_epoch_you_want_to_test` in the command line of your python environment.
