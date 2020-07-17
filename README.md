@@ -1,7 +1,7 @@
 # PyTorch Punctuator
 ----A basic template for punctuation prediction implemented by PyTorch
 
-## File Description
+## 1. File Description
 > **data**
 > * **`raw_data`**: the directory to store raw data for training, validation, and testing, containing `train.txt`, `valid.txt`, and `test.txt`, respectively.
 > * **`processed_data`**: the directory to store the processed data of `raw_data` by `preprocessing.py`, containing `train.npy`, `valid.npy` and `test.npy`, respectively.
@@ -27,3 +27,14 @@
 > * if you want to train the model from scratch, run `python main.py --mode train --start_epoch 1` in the command line of your python environment.
 > * if you want to resume the training process, run `python main.py --mode train --start_epoch epoch_you_want_to_resume` in the command line of your python environment.
 > * if you want to test the model, run `python main.py --mode test --load_epoch parameters_epoch_you_want_to_test` in the command line of your python environment.
+
+## 2. Train and test your own model
+if you want to train and test your own model using this template, your just need to:
+* create a `YourOwnNet.py` file in directory `models` and implement every details of your own networks.
+* create a  `YourOwnModel.py` that extends the father class `BaseModel` and only implement the `forward()` function and `backward()` function 
+* import `YourOwnModel` in `trainer.py` and `tester.py` as well as modify the **MODEL NAME** with `YourOwnModel'.
+
+## 3. Future works
+* implement more `**Models` for punctuation prediction.
+* try to do punctuation restoration.
+* try different kinds of Language materials, such as Chinese etc.
