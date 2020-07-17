@@ -39,5 +39,5 @@ if you want to train and test your own model using this template, your just need
 * try to do punctuation restoration.
 * try different kinds of Language materials, such as Chinese etc.
 
-## Contacts
+## 4. Contacts
 if you have any questions, please email to: [tsmotlp](tsmotlp@163.com) or [sakura](tsmotlp@163.com).
